@@ -1,0 +1,34 @@
+import tensorflow as tf
+import pandas as pd
+import numpy as np
+import os
+import tensorflow as tf
+#print(os.listdir('D:\study\major project\scl\preprocessed\pitchdata'))
+#print(os.listdir('D:\study\major project\scl\preprocessed\pitchdata'))
+'''max_row=0;
+name=""
+pitch=""
+i=0;
+full_data=[]
+j=0
+location='D:\study\major project\scl\preprocessed\pitchdata\\'
+paddf=pd.DataFrame({'st0':[0],'st1':[0],'st2':[0],'st3':[0],'st4':[0],'st5':[0],'st6':[0],'st7':[0],'st8':[0],'st9':[0],'st10':[0],'st11':[0],})
+for fname in os.listdir('D:\study\major project\scl\preprocessed\pitchdata'):
+    data=pd.read_csv(location+fname);
+    length=len(data)
+    if(length>849):
+        data=data[:849]
+    else:
+        for i in range(1,849-length+1):
+            data=pd.concat([data,paddf]) 
+    #print(len(data))
+    temp=np.asarray(data)
+    temp1=np.reshape(temp,12*849)
+    full_data.append(temp1)
+    j=j+1
+    print(j)
+print(len(full_data))
+'''
+from keras.datasets import mnist
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
+print(x_train)
